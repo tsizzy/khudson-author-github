@@ -1,0 +1,124 @@
+    :root {
+      --deep-navy: #033764;
+      --slate: #414c6f;
+      --sky: #75cbfe;
+      --violet: #6a598d;
+      --mint: #9ad9c2;
+
+      --bg: #020818;
+      --text: #f5f7ff;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+        sans-serif;
+      background: radial-gradient(circle at top left, #020818 0, #020818 40%, #02010f 100%);
+      color: var(--text);
+      line-height: 1.6;
+      scroll-behavior: smooth;
+    }
+
+    a {
+      color: var(--sky);
+      text-decoration: none;
+    }
+
+    a:hover,
+    a:focus {
+      text-decoration: underline;
+    }
+
+.hero {
+  position: relative;
+  min-height: 40vh;               /* adjust to taste */
+  display: flex;
+  align-items: center;
+  padding: 3rem 8vw;
+  color: #fff;
+
+  background-image: url("/images/herobanner.jpg");
+  background-size: cover;
+  background-position: center left; /* keeps moon visible */
+}
+
+/* The dark “rectangle” on the right */
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 75%;  /* how wide the dark area is */
+
+  /* gradient that fades toward the image = soft edges */
+  background: linear-gradient(
+    to left,
+    rgba(0, 0, 40, 0.95),
+    rgba(0, 0, 40, 0.7),
+    rgba(0, 0, 40, 0)
+  );
+  pointer-events: none; /* clicks pass through */
+}
+
+/* Actual text content */
+.hero-content {
+  position: relative;   /* so it's above the overlay */
+  max-width: 28rem;
+  margin-left: auto;    /* push it to the right side */
+  text-align: left;
+}
+
+.hero-content h1 {
+  font-size: clamp(2.5rem, 4vw, 3.5rem);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.hero-content p {
+  margin-top: 0.75rem;
+  font-size: clamp(1.1rem, 2vw, 1.3rem);
+}
+
+.hero-content span {
+  color: #80ffe8; /* pick a light teal from your circuitry */
+}
+
+/* Mobile: make overlay cover whole thing and center text */
+@media (max-width: 800px) {
+  .hero-overlay {
+    width: 100%;
+    background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 40, 0.85),
+      rgba(0, 0, 40, 0.95)
+    );
+  }
+
+  .hero {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .hero-content {
+    margin: 0 auto;
+  }
+
+}
+
+.main-nav {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: #02041a;      /* same dark blue */
+  color: #fff;
+}
+
+/*FOOTER*/
+.footer{
+  background-image:url(/images/footer-image.png);
+}
