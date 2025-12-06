@@ -18,7 +18,8 @@
     body {
       font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
         sans-serif;
-      background: radial-gradient(circle at top left, #020818 0, #020818 40%, #02010f 100%);
+      background: radial-gradient(circle at top left, var(--slate) 0,var(--sky) 40%, var(--mint) 100%);
+      /*background-color: var(--slate);*/
       color: var(--text);
       line-height: 1.6;
       scroll-behavior: smooth;
@@ -115,10 +116,10 @@
   position: sticky;
   top: 0;
   z-index: 1000;
-  background: #02041a;      /* same dark blue */
+  background: var(--deep-navy);      /* same dark blue */
   color: #fff;
   overflow: hidden;
-  background-color: #333;
+  background-color: var(--deep-navy);
 }
 
 /* Style the topnav links */
@@ -186,7 +187,7 @@
   position: relative;
   padding: 0.5rem;
   top: 0.4rem;
-  
+  right:0.75 rem;
   border: none;
   background: transparent;
   font-size: 1.5rem;
@@ -208,5 +209,34 @@
 
 /*FOOTER*/
 .footer{
-  background-image:url(/images/footer-image.png);
+  position:fixed;
+  /*background-image:url(/images/footer-image.png);
+  background: linear-gradient(
+  to bottom,  
+  #3b0483, #1e01a1,);*/
+  background-color:;
+  width: 100vw;
+  min-height: 100px;
+  bottom: 0;
+  padding: 10px;
+  background-color: var(--deep-navy);
 }
+
+.footer a{
+  position:relative;
+    float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+}
+
+
+
+.footer p{
+  position: relative;
+  width: 100%;
+  bottom: 0px;
+}
+
+
