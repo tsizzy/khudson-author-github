@@ -2,37 +2,22 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>K Hudson – Author</title>
+    <title>K Hudson – Author Blog</title>
     <meta name="description" content="Writer. Dreamfield and other projects." />
+
     <link rel="stylesheet" href="styles/main.css" />
+
 
     <!-- MailerLite Universal -->
     <script>
-      (function (w, d, e, u, f, l, n) {
-        w[f] =
-          w[f] ||
-          function () {
-            (w[f].q = w[f].q || []).push(arguments);
-          };
-        l = d.createElement(e);
-        l.async = 1;
-        l.src = u;
-        n = d.getElementsByTagName(e)[0];
-        n.parentNode.insertBefore(l, n);
-      })(window, document, "script", "https://assets.mailerlite.com/js/universal.js", "ml");
-      ml("account", "2090934");
-    </script>
-    <!-- End MailerLite Universal -->
-
-
-      <script>
       (function(w,d,e,u,f,l,n){
         w[f]=w[f]||function(){(w[f].q=w[f].q||[]).push(arguments);};
         l=d.createElement(e); l.async=1; l.src=u;
         n=d.getElementsByTagName(e)[0]; n.parentNode.insertBefore(l,n);
       })(window,document,'script','https://assets.mailerlite.com/js/universal.js','ml');
       ml('account', '2090934');
-      </script>
+    </script>
+    <!-- End MailerLite Universal -->
   </head>
 
   <body>
@@ -117,42 +102,6 @@
       </div>
     </footer>
 
-    <script>
-      const FORM_ID = "GBTmge"; // your popup/form id
-
-      function showMailerLiteForm() {
-        if (typeof ml === "function") {
-          ml("show", FORM_ID, true);
-        } else {
-          setTimeout(showMailerLiteForm, 200);
-        }
-      }
-
-      // Auto-show after a few seconds
-      setTimeout(showMailerLiteForm, 5000);
-
-      // Manual trigger
-      document.getElementById("open-newsletter").addEventListener("click", (e) => {
-        e.preventDefault();
-        showMailerLiteForm();
-      });
-    </script>
-    <script>
-        const FORM_ID2 = "GBTmge"; // your MailerLite popup ID
-
-        function showUpdates() {
-          if (typeof ml === "function") {
-            ml("show", FORM_ID, true);
-          }
-        }
-
-        document.addEventListener("click", function(e) {
-          const trigger = e.target.closest(".js-open-updates");
-          if (!trigger) return;
-
-          e.preventDefault();
-          showUpdates();
-        });
-</script>
+    <script src="./main.js"></script>
   </body>
 </html>
