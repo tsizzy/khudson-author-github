@@ -1,0 +1,2 @@
+notes on webpage:
+ <div><p>Note: I consulted with AI on the code of this webpage, even though all art work is human generated. I also use visual studio code and I test with live server, and a copy and modify code from w3schools and I use a shampoo bar. Contact me at one of the above if you wanna know anything else.</p></div>

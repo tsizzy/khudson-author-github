@@ -18,8 +18,8 @@
     body {
       font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
         sans-serif;
-      background: radial-gradient(circle at top left, var(--slate) 0,var(--sky) 40%, var(--mint) 100%);
-      /*background-color: var(--slate);*/
+      /*background: radial-gradient(circle at top left, var(--slate) 0,var(--sky) 40%, var(--mint) 100%);*/
+      background-color: var(--sky);
       color: var(--text);
       line-height: 1.6;
       scroll-behavior: smooth;
@@ -35,6 +35,7 @@
       text-decoration: underline;
     }
 
+
 .hero {
   position: relative;
   min-height: 40vh;               /* adjust to taste */
@@ -46,6 +47,18 @@
   background-image: url("/images/herobanner.jpg");
   background-size: cover;
   background-position: center left; /* keeps moon visible */
+}
+
+.hero-container{
+  position:relative;
+  min-height: 20vh;
+}
+
+.hero-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
 /* The dark “rectangle” on the right */
@@ -89,6 +102,20 @@
   color: #80ffe8; /* pick a light teal from your circuitry */
 }
 
+
+  .blog-title{
+    color: var(--bg);
+    text-align: center;
+    font-family: serif;
+  }
+
+  .blog-text{
+      color: var(--bg);
+      margin-right: 5%;
+      margin-left: 3%;
+      text-align: center;
+      margin: 2px;
+    }  
 /* Mobile: make overlay cover whole thing and center text */
 @media (max-width: 800px) {
   .hero-overlay {
@@ -257,6 +284,8 @@
 
   .featured-main {
     display: flex;
+    bottom: 25px;
+
   }
 
   .featured-secondary {
@@ -332,5 +361,20 @@
 .featured-content p {
   line-height: 1.5;
   opacity: 0.8;
+}
+
+.chapters{
+ margin-left: 5%;
+ margin-right:5%;
+}
+
+.chapter{
+  background-color: var(--mint);
+  padding: 12px;
+}
+
+.chapter-link{
+  color: var(--deep-navy);
+  margin-left: 3%;
 }
 
