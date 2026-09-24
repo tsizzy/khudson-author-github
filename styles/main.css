@@ -55,12 +55,19 @@
 }
 
 .hero-image {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+  position:relative;
+  width: 20%;
+  height: auto;
+  
+  /*object-fit: cover;*/
   display: block;
 }
 
+.hero-image img{
+  width: 100%;
+  height: auto;
+ 
+}
 /* The dark “rectangle” on the right */
 .hero-overlay {
   position: absolute;
@@ -102,18 +109,68 @@
   color: #80ffe8; /* pick a light teal from your circuitry */
 }
 
+.project-hero{
+    position: relative;
+  min-height: 40vh;               /* adjust to taste */
+  width: 80%;
+  left: 10%;
+  display: flex;
+  align-items: left;
+  padding: 10%;
+  color: #fff;
+
+  background-colour: var(--slate);
+  background-size: cover;
+  background-position: center left; /* keeps moon visible */
+}
+
+.project-hero-image{
+  position: relative;
+  display:block;
+  width: 100%;
+  height:auto;
+}
+
+.project-hero-image img{
+    width: 100%;
+  height: auto;
+}
+
+.project-hero-content{
+  padding: 5%;
+}
+
+.blog-hero-image{
+  position:relative;
+  max-height:50%;
+  width: cover;
+  align-items: center;
+}
+
+.blog-hero-image img{
+  width: 100%;
+  heiht:auto;
+}
 
   .blog-title{
     color: var(--bg);
     text-align: center;
-    font-family: serif;
+    font-family: sans-serif;
+    font-weight: bolder;
+    font-size: 3rem;
+    font-width: wider;
+    margin-bottom: 3%;
+    margin-top: 1%;
   }
 
   .blog-text{
-      color: var(--bg);
+      color: var(--deep-navy);
       margin-right: 5%;
       margin-left: 3%;
-      text-align: center;
+      padding-left: 5%;
+      padding-right: 5%;
+      margin-top: 10%;
+      text-align: justify;
       margin: 2px;
     }  
 /* Mobile: make overlay cover whole thing and center text */
@@ -368,8 +425,14 @@
  margin-right:5%;
 }
 
+.chapter-heading{
+  padding-left: 12px;
+  margin:5%;
+  text-align: center;
+}
+
 .chapter{
-  background-color: var(--mint);
+  background-color: #4b4b4b;
   padding: 12px;
 }
 
@@ -378,3 +441,17 @@
   margin-left: 3%;
 }
 
+#substack-link{
+  position: relative;
+  padding: 5px;
+  margin: 8px;
+  border-radius: 5px;
+  background-color: orange;
+  border: none;
+  box-shadow: orangered;
+}
+
+#bold-text, #bold-text h4{
+ color: var(--deep-navy);
+ font-size: larger;
+}
